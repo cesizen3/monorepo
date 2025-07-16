@@ -1,0 +1,12 @@
+name: 01 - Integration
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  #Test_Back_Front:
+
+  #Quality_SonarCube:
+
+  #Security_Snyk:
