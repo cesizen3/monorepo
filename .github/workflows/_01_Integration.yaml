@@ -8,6 +8,8 @@ jobs:
   Test_Back_Front:
     uses: ./.github/workflows/01-1_TestBackFront.yaml
 
-  #Quality_SonarCube:
+  Quality_SonarCube:
+    uses: ./.github/workflows/01-2_SonarQube.yaml
+    secrets: inherit
 
   #Security_Snyk:
