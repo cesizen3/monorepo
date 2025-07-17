@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\flart\\source\\repos\\CesiZen\\CESIZen\\CESIZen.csproj": {}
+    "C:\\Users\\flart\\Documents\\cesi\\indiv\\Bloc 3\\CesiZen\\CESIZen\\CESIZen.csproj": {}
   },
   "projects": {
-    "C:\\Users\\flart\\source\\repos\\CesiZen\\CESIZen\\CESIZen.csproj": {
+    "C:\\Users\\flart\\Documents\\cesi\\indiv\\Bloc 3\\CesiZen\\CESIZen\\CESIZen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\flart\\source\\repos\\CesiZen\\CESIZen\\CESIZen.csproj",
+        "projectUniqueName": "C:\\Users\\flart\\Documents\\cesi\\indiv\\Bloc 3\\CesiZen\\CESIZen\\CESIZen.csproj",
         "projectName": "CESIZen",
-        "projectPath": "C:\\Users\\flart\\source\\repos\\CesiZen\\CESIZen\\CESIZen.csproj",
+        "projectPath": "C:\\Users\\flart\\Documents\\cesi\\indiv\\Bloc 3\\CesiZen\\CESIZen\\CESIZen.csproj",
         "packagesPath": "C:\\Users\\flart\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\flart\\source\\repos\\CesiZen\\CESIZen\\obj\\",
+        "outputPath": "C:\\Users\\flart\\Documents\\cesi\\indiv\\Bloc 3\\CesiZen\\CESIZen\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,6 +59,10 @@
               "target": "Package",
               "version": "[8.0.14, )"
             },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.14, )"
@@ -79,6 +83,10 @@
               "target": "Package",
               "version": "[8.0.14, )"
             },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.8.0, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -86,6 +94,14 @@
             "Moq": {
               "target": "Package",
               "version": "[4.20.72, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.2, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.5, )"
             }
           },
           "imports": [
