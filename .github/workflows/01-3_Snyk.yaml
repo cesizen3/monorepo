@@ -1,0 +1,19 @@
+name: 01-3 - Snyk Security Scan
+
+on:
+  workflow_call
+
+jobs:
+  SnykSecurity:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions@v1
+        with:
+          args: test --all-projects --severity-threshold=medium
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
