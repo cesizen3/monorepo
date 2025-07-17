@@ -1,11 +1,11 @@
-using Microsoft.EntityFrameworkCore;
-using CesiZen.Data;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using CESIZen.Models;
+using CesiZen.Data;
 
 namespace CESIZen
 {
-    public partial class Program
+    public class Program
     {
         public static void Main(string[] args)
         {
@@ -18,7 +18,7 @@ namespace CESIZen
                 options.UseSqlServer(
                     builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            // Configurer Identity avec Utilisateur personnalis�
+            // Identity
             builder.Services.AddIdentity<Utilisateur, IdentityRole<int>>(options =>
             {
                 options.Password.RequiredLength = 4;
@@ -31,7 +31,6 @@ namespace CESIZen
             .AddEntityFrameworkStores<CesiZenDbContext>()
             .AddDefaultTokenProviders();
 
-            // Configuration des cookies
             builder.Services.ConfigureApplicationCookie(options =>
             {
                 options.LoginPath = "/Account/Login";
@@ -65,7 +64,7 @@ namespace CESIZen
                 pattern: "Admin/{controller=User}/{action=Index}/{id?}",
                 defaults: new { area = "" });
 
-            // Initialisation des rôles
+            // Seed roles
             using (var scope = app.Services.CreateScope())
             {
                 var serviceProvider = scope.ServiceProvider;
