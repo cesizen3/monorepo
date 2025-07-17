@@ -3,6 +3,8 @@ using CesiZen.Data;
 using Microsoft.AspNetCore.Identity;
 using CESIZen.Models; // Ajoutez le namespace de votre mod�le Utilisateur
 
+public partial class Program { }
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -79,8 +81,5 @@ using (var scope = app.Services.CreateScope())
         }
     }
 }
-
-
-public partial class Program { }
 
 app.Run();
